@@ -1,5 +1,4 @@
 /* Layout all pages */
-
 body {
 					background-color: #ffffff;
 					font-family:tahoma, arial;
@@ -35,7 +34,6 @@ hr {
 
 
 /* Layout header */
-
 .header {
 							background: #003c69;
 							color: #ffffff;
@@ -69,8 +67,7 @@ hr {
 }
 
 
-/* Layout home page */
-
+/* Layout home page for pictures */
 .hometable {
 				width: 100%;
 				background-color: #D1D5DE;
@@ -111,12 +108,12 @@ hr {
 				position: absolute;
 				bottom: 10%;
 				color: #ffffff;
+				z-index: 2;
 				text-align: center;
 				width: 100%;
-				z-index: 2;
 }
 
-
+/* Layout home page for address and social media */
 .connect {
 						width: 100%;
 						background-color: #D1D5DE;
@@ -140,7 +137,7 @@ hr {
 .connect td.address{
 						width:60%;
 						text-align: left;
-						font-style:helvetica narrow;
+						font-style: italic;
 }
 
 .connect td img {
@@ -149,13 +146,7 @@ hr {
 }
 
 
-/* Layout Contact page */
-
-.contact {		
-						margin-left: 20px;
-						padding:30px;
-}
-
+/* Layout Contact page for form */
 .contact form {
 						width: 50%;
 						min-width: 700px;
@@ -178,8 +169,7 @@ hr {
 }
 
 
-/* Layout Information Page */
-
+/* Layout Our Collection Page for Display Objects*/
 table.books {
 					width:65%;
 					min-width:600px;
@@ -213,17 +203,18 @@ td.width_books img{
 						font-size:14px;
 						width: 100%;
 						background-color: #ce1f2c;
+						color: #ffffff;
 						bottom: 0;
 }
 
-.footer table {			
+.footer_table {			
 						width: 95%;
 						max-width:1200px;
-						color: #ffffff;
 						margin: 0 auto;
 						padding: 8px;
 						border-spacing: 25px;
 }
+				
 
 .footer td,th {			
 						text-align: left;
@@ -231,10 +222,6 @@ td.width_books img{
 						width: 300px;
 }
 
-.footer input, button {	
-						margin-bottom: 5px;
-						display: block;
-}
 
 
 
