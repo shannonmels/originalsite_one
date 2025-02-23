@@ -1,3 +1,4 @@
+//function to assign input of user to variables, and run through a validation check
 function contactValidation() {
     var contactFormObj = document.getElementById("contactForm");
     var name = contactFormObj.name.value.trim();
@@ -6,8 +7,8 @@ function contactValidation() {
     var everythingOK = true;
 
     if (!validateName(name)) {
-        alert("Error: Invalid Name.");
-        everythingOK = false;
+        alert("Error: Invalid Name."); //Error pop up if validation name is wrong
+        everythingOK = false; //Submission will not go through
     }
 
     if (!validateEmail(email)) {
@@ -26,12 +27,13 @@ function contactValidation() {
     }
 
     if (everythingOK) {
-        alert("All the information looks good.\nThank you!");
+        alert("All the information looks good.\nThank you!"); //if all information was correct a correlating pop up message appears
     }
 
     return everythingOK;
 }
 
+//ensures a valid name is entered, without unrelated symbols
 function validateName(name) {
     var p = name.search(/^[-'\w\s]+$/); 
     if (p == 0) {
@@ -41,6 +43,7 @@ function validateName(name) {
     }
 }
 
+//ensures an email address is entered (check for @)
 function validateEmail(email) {
     var p = email.search(/.+@.+/); 
     if (p == 0) {
@@ -50,6 +53,7 @@ function validateEmail(email) {
     }
 }
 
+//ensures the message is not empty
 function validateMessage(message) {
     if (message.length > 0) {
         return true;
