@@ -117,6 +117,7 @@ hr {
 .connect {
 						width: 100%;
 						background-color: #D1D5DE;
+						padding-bottom:25px;
 }
 
 .connect table{
